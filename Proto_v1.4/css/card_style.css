@@ -1,0 +1,194 @@
+body {
+    background: url('/Proto_v1.4/Proto_v1.4/img/Kisl_3.jpg') center  fixed no-repeat;
+	background-size: 100%;
+}
+
+header{
+    background-color: #00000074;
+    justify-content: space-around;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(2.5px);
+
+}
+
+.line{
+    border-top: 1.5px #ffffff solid;
+    border-bottom: 1.5px #ffffff solid;
+}
+
+.container {
+	/* max-width: 1536px;
+	max-height: 768px; */
+	/* height: 80vh; */
+	width: 80%;
+	margin: 30px auto;
+	border-radius: 20px;
+	background-color: #00000074;
+	overflow: hidden;
+	backdrop-filter: blur(2.5px);
+	margin-bottom: 80px;
+
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+	
+}
+
+.card{
+    width: 40vh;
+    height: 40vh;
+    background: rgb(255, 255, 255, 0.2);
+    margin: 1.5em;
+
+}
+
+.card_2{
+    width: 80vh;
+    height: 40vh;
+    background: rgb(255, 255, 255, 0.2);
+    margin: 1.5em;
+}
+
+.container td{
+    padding: 5px;
+}
+
+.cards{
+    display: flex;
+}
+
+.container input{
+    background: rgb(255, 255, 255, 0.2);
+    font-size: 18px;
+    color: #ffffff;
+    width: 12vw;
+    border-radius: 0.5vh;
+    
+}
+
+
+.knop{
+    width: 12vw;
+    border-radius: 0.5vh;
+    background: rgb(255, 255, 255, 0.2);
+    color: white;
+    font-size: 18px;
+}
+
+header td {
+    padding: 15PX; /* Регулируйте значение, чтобы получить желаемый отступ */
+}
+
+header button {
+    width: 15vw;
+    height: 10vh;
+    overflow: hidden;
+    font-size: 2vh;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0);
+    background: linear-gradient(135deg, rgb(255, 255, 255, 0.1) 50%, rgb(0, 0, 0, 0));
+    /* border: 0.1vh solid #ffffff; */
+    border-radius: 50vh;
+    z-index: 4;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.412);
+
+}
+
+header button:hover {
+    transition-duration: 0.5s;
+    background-color: #ffffff;
+    color: black;
+    border: 0.1vh solid #000000;
+    border-radius: 50vh;
+    box-shadow: none;
+}
+
+label{
+    font-size: 2vh;
+    color: #ffffff;
+}
+
+.container table{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+.micro_r{
+    width: 2vw;
+    height: 5vh;
+    border-radius: 0 0.5vh 0.5vh 0 ;
+    background: rgb(255, 255, 255, 0.2);
+    color: white;
+}
+
+.micro_l{
+    width: 2vw;
+    height: 5vh;
+    border-radius: 0.5vh 0 0 0.5vh;
+    background: rgb(255, 255, 255, 0.2);
+    color: white;
+    
+}
+
+.info{
+    height: 5vh;
+}
+
+.kock{
+    display: flex;
+    justify-content: center;
+}
+
+.kock input{
+    border-radius: 0px;
+    width: 8vw;
+}
+
+footer {
+	background: linear-gradient(0deg, #00000074 90%, #00000000 100%);
+}
+
+.contacts {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: column;
+}
+
+footer table td {
+	padding: 40px;
+
+}
+
+.table_icons{
+	padding: 80px;
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+
+.text_container {
+	padding: 7%;
+    width: 100%;
+}
+
+
+
+.hidden {
+    display: none;
+  }
+  
+  #popupMenu {
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+  
+  #popupMenu a {
+    display: block;
+    padding: 4px;
+  }
+  

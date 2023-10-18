@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<link rel="stylesheet" href="css\style.css" />
+		<link rel="stylesheet" href="css\main.css" />
+		<link rel="stylesheet" href="css\header.css" />
+
+		<script src="https://api-maps.yandex.ru/2.1/?lang=en_US"></script>
+		<script src="js\map.js"></script>
+		<script src="js\copyright.js"></script>
+	</head>
+	<header>
+		<div class="center">
+			<div class="visitor_screen">
+				<div><h1>NOGAEV</h1></div>
+				<div><h4 class="text">HOTEL</h4></div>
+				<a href="card.html"><button id="Booking">Бронирование</button></ф>
+			</div>
+		</div>
+	</header>
+	<body>
+		<div>
+			<div class="container container_content white">
+				<div class="text_container">
+					<h2>О НАС</h2>
+					<p class="text_sod box">
+						Пятизвездочный отель Арарат Парк Хаятт Москва расположен в
+						историческом центре Москвы рядом с Красной площадью и Большим
+						театром. Современная роскошь в интерьерах от дизайнера Тони Чи
+						создает неповторимую атмосферу дома вдали от дома, где каждый гость
+						чувствует себя по-настоящему значимым.
+					</p>
+					<img src="img\photo_2023-08-28_21-07-23.jpg" alt="#" height="600px" />
+				</div>
+				<img 
+					src="img\Nogaev.jpg"
+					class="rounded-corner"
+					alt="#"
+					height="600px"
+				/>
+			</div>
+			<div class="container white">
+				<div class="text_container">
+					<h2>УДОБСТВА</h2>
+					<ul class="text_sod dot-list text_sodr">
+						<li>Электронные замки</li>
+						<li>Завтрак в номер</li>
+						<li>Wi-Fi</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="container white">
+				<div class="text_container">
+					<h2>МЕСТОПОЛОЖЕНИЕ</h2>
+					<h3>г.Кисловодск, ул.Чкалова 74</h3>
+					<!-- <p id="map" style="height: 60%;"></p> -->
+					<div id="map" style="height: 60vh;"></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="contacts">
+				<table>
+						<tr>
+							<td class="table_icons">
+								<a href="https://web.telegram.org/a/" target="_blank"
+									><img src="img\icons8-телеграм-50.png" alt=""
+								/></a>
+							</td>
+							<td class="table_icons">
+								<a href="https://web.telegram.org/a/" target="_blank"
+									><img src="img\icons8-instagram-50.png" alt=""
+								/></a>
+							</td>
+							<td class="table_icons">
+								<a href="https://web.telegram.org/a/" target="_blank"
+									><img src="img\icons8-whatsapp-48.png" alt=""
+								/></a>
+							</td>
+					</table>
+				<h3 class="white">	
+					<table class="table">
+						</tr>
+						<tr>
+							<td>ТЕЛЕФОН</td>
+							<td colspan="2">+7-909-903-3355</td>
+						</tr>
+						<tr>
+							<td>АДРЕС</td>
+							<td colspan="2">г.Кисловодск, ул. Чкалова 74</td>
+						</tr>
+						<tr>
+							<td>E-MAIL</td>
+							<td colspan="2">Nogaev@gmail.com</td>
+						</tr>
+					</table>
+					<p class="text_container" id="copyright">
+						&copy; <span id="year"></span> NOGAEV. Все права защищены.
+					</p>
+				</h3>
+			</div>
+		</footer>
+	</body>
+</html>
+<script>
+	const yearSpan = document.getElementById('year')
+	const currentYear = new Date().getFullYear()
+	yearSpan.textContent = currentYear
+</script>

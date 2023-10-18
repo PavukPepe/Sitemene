@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<link rel="stylesheet" href="css\style.css" />
+        <link rel="stylesheet" href="css\card_style.css">
+
+		<script src="https://api-maps.yandex.ru/2.1/?lang=en_US"></script>
+		<script src="js\map.js"></script>
+		<script src="js\copyright.js"></script>
+	</head>
+    <header>
+        <div class="white">
+            <table>
+                <tr>
+                    <td><h2 class="line">NOGAEV</h2></td>
+                    <td><a href="index.html"><button>
+                        Главная 
+                        </button></a>
+                    </td>
+                    <td><a href="support.html"><button>
+                        Поддержка
+                        </button></a>
+                    </td>
+                    <td><a href="card.html"><button>
+                        Бронирование
+                        </button></a>
+                    </td>
+                    <td><h2 style="font-size: 50px;" >+7-909-903-3355</h2></td>
+                </tr>
+              </table>
+    </header>
+	<body>
+		<script>
+			class PopupMenu {
+  constructor(buttonId, menuId) {
+    this.button = document.getElementById(buttonId);
+    this.menu = document.getElementById(menuId);
+    this.isHidden = true;
+    
+    this.button.addEventListener('click', this.toggleMenu.bind(this));
+  }
+
+  toggleMenu() {
+    this.isHidden = !this.isHidden;
+    
+    if (this.isHidden) {
+      this.menu.classList.add('hidden');
+    } else {
+      this.menu.classList.remove('hidden');
+    }
+  }
+}
+
+const popupMenu = new PopupMenu('toggleButton', 'popupMenu');
+		</script>
+        <div class="container">
+            <p><h2>FAQ</h2></p>
+			<div>
+				<button id="toggleButton">Открыть меню</button>
+<div id="popupMenu" class="hidden">
+  <a href="#">Пункт меню 1</a>
+  <a href="#">Пункт меню 2</a>
+  <a href="#">Пункт меню 3</a>
+</div>
+			</div>
+        </div>
+		<footer>
+			<div class="contacts">
+				<table class="table_icons">
+						<tr>
+							<td class="table_icons">
+								<a href="https://web.telegram.org/a/" target="_blank"
+									><img src="img\icons8-телеграм-50.png" alt=""
+								/></a>
+							</td>
+							<td class="table_icons">
+								<a href="https://web.telegram.org/a/" target="_blank"
+									><img src="img\icons8-instagram-50.png" alt=""
+								/></a>
+							</td>
+							<td class="table_icons">
+								<a href="https://web.telegram.org/a/" target="_blank"
+									><img src="img\icons8-whatsapp-48.png" alt=""
+								/></a>
+							</td>
+					</table>
+				<h3 class="white">	
+					<table class="table">
+						</tr>
+						<tr>
+							<td>ТЕЛЕФОН</td>
+							<td colspan="2">+7-909-903-3355</td>
+						</tr>
+						<tr>
+							<td>АДРЕС</td>
+							<td colspan="2">г.Кисловодск, ул. Чкалова 74</td>
+						</tr>
+						<tr>
+							<td>E-MAIL</td>
+							<td colspan="2">Nogaev@gmail.com</td>
+						</tr>
+					</table>
+					<p class="text_container" id="copyright">
+						&copy; <span id="year"></span> NOGAEV. Все права защищены.
+					</p>
+				</h3>
+			</div>
+		</footer>
+	</body>
+</html>
+<script>
+	const yearSpan = document.getElementById('year')
+	const currentYear = new Date().getFullYear()
+	yearSpan.textContent = currentYear
+</script>

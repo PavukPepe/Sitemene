@@ -1,0 +1,110 @@
+.container {
+	max-width: 1536px;
+	max-height: 864px;
+	height: 90vh;
+	width: 80%;
+	margin: 80px auto;
+	border-radius: 20px;
+	background-color: #00000074;
+	overflow: hidden;
+	backdrop-filter: blur(2.5px);
+	margin-bottom: 80px;
+	
+}
+
+.text_container {
+	margin: 7%;
+}
+
+.container_content {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.container_fr {
+	max-width: 1536px;
+	max-height: 864px;
+	height: 90vh;
+	width: 80%;
+	margin: 80px auto;
+	background-color: #000;
+	background: url('img/1611919708_Kislovodsk-min.jpg') center no-repeat fixed;
+	background-position: center;
+	overflow: hidden;
+}
+
+.text_sod {
+	font-size: 20px;
+	color: #ffffff;
+	position: relative;
+	text-align: left;
+	font-family: Forum, sans-serif;
+}
+
+.dot-list {
+	list-style-type: none;
+	padding: 0;
+	font-size: 40px;
+	font-family: Forum, sans-serif;
+}
+
+.dot-list li::before {
+	content: '•';
+	margin-right: 0.5em;
+	font-size: 40px;
+}
+
+.contacts {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: column;
+}
+
+footer {
+	background: linear-gradient(0deg, #00000074 90%, #00000000 100%);
+}
+
+.white {
+	color: #ffffff;
+}
+
+/* table {
+	padding-top: 50px;
+	padding-bottom: 50px;
+} */
+
+
+table td {
+	padding: 40px;
+
+}
+
+.table_icons{
+	padding: 80px;
+	padding-bottom: 40px;
+	padding-top: 40px;
+
+}
+
+.rounded-corner {
+	border-radius: 2.5% 0 0 2.5%;
+}
+
+
+#map{
+	display: block;
+	height: 50%;
+}
+
+body{
+	background: url('/Proto_v1.4/Proto_v1.4/img/Kisl_3.jpg') center  fixed no-repeat;
+	background-size: 100%;
+}
+
+footer table img:hover{
+    transition-duration:0.5s ;
+    transform: translate(0, -10px);
+
+}

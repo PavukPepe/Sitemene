@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css\card_style.css">
+    <link rel="stylesheet" href="css/cards_animation_buutons.css">
+    <script src="js\window.js"></script>
+    <script>
+        function incrementGuests() {
+          var guestsInput = document.getElementById("guests");
+          var currentGuests = parseInt(guestsInput.value);
+          if (currentGuests < 5) {
+            guestsInput.value = currentGuests + 1;
+          }
+        }
+        
+        function decrementGuests() {
+          var guestsInput = document.getElementById("guests");
+          var currentGuests = parseInt(guestsInput.value);
+          if (currentGuests > 1) {
+            guestsInput.value = currentGuests - 1;
+          }
+    }
+    </script>
+</head>
+<header>
+    <div class="white">
+        <table>
+            <tr>
+                <td><h2 class="line">NOGAEV</h2></td>
+                <td><a href="index.html"><button>
+                    Главная 
+                    </button></a>
+                </td>
+                <td><a href="support.html"><button>
+                    Поддержка
+                    </button></a>
+                </td>
+                <td><a href="card.html"><button>
+                    Бронирование
+                    </button></a>
+                </td>
+                <td><h2 style="font-size: 50px;" >+7-909-903-3355</h2></td>
+            </tr>
+          </table>
+</header>
+<body>
+    <div class="container">
+        <table>
+            <tr class=>
+                <td> 
+                    <label for="date_in">Дата заезда</label>
+                    <div jopa>
+                        <input id="date_in" type="date" value="2017-06-01" class="info" />
+                    </div>
+                </td>
+                <td>
+                    <label for="date_out">Дата выезда</label>
+                    <div>
+                        <input id="date_out" type="date" value="2017-06-01" class="info" />
+                    </div>
+                </td>
+                <td>
+                    <div >
+                        <label for="guests">Количество гостей:</label>
+                        <div class="kock">
+                            <button onclick="decrementGuests()" class="micro_l">-</button>
+                            <input type="text" id="guests" value="1" class="info" readonly disabled>
+                            <button onclick="incrementGuests()" class="micro_r">+</button>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <label for="guests">Количество гостей:</label>
+                    <div>
+                        <button class="info knop" type="submit" id="OK">Найти</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="cards">
+                    <div class="card"></div>
+                    <div class="card_2"></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="cards">
+                    <div class="card"></div>
+                    <div class="card_2"></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="cards">
+                    <div class="card"></div>
+                    <div class="card_2"></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <div class="contacts">
+            <table class="table_icons">
+                    <tr>
+                        <td class="table_icons">
+                            <a href="https://web.telegram.org/a/" target="_blank"
+                                ><img src="img\icons8-телеграм-50.png" alt=""
+                            /></a>
+                        </td>
+                        <td class="table_icons">
+                            <a href="https://web.telegram.org/a/" target="_blank"
+                                ><img src="img\icons8-instagram-50.png" alt=""
+                            /></a>
+                        </td>
+                        <td class="table_icons">
+                            <a href="https://web.telegram.org/a/" target="_blank"
+                                ><img src="img\icons8-whatsapp-48.png" alt=""
+                            /></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="padding-right: 120px;">
+                           <h3 class="white">
+                            <p class="text_container" id="copyright">
+                                &copy; <span id="year">NOGAEV. Все права защищены.</span> 
+                            </p>
+                            </h3> 
+                        </td>
+                    </tr>
+                </table>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+header {
+    height: 100%;
+    max-height: 1920px;
+    background-color: #00000074;
+    background: linear-gradient(0deg,  #00000000,  #00000074 10%);
+    overflow: hidden;
+
+}
+
+.center {
+    padding-top: 25vh;
+}
+
+.visitor_screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 6;
+    position: relative;
+    zoom: 1;
+}
+
+.img_e {
+    align-self: center;
+    z-index: 0;
+    position: fixed;
+}
+
+.photo {
+    z-index: 0;
+}
+
+.photo_left {
+    float: left;
+    transform: rotate(18deg);
+    z-index: 0;
+    position: relative;
+    right: 25%;
+    bottom: 25vh;
+    border-radius: 3vh;
+}
+
+.photo_right {
+    float: right;
+    position: relative;
+    transform: rotate(18deg);
+    z-index: 0;
+    left: 20vw;
+    top:4vh;
+    border-radius: 3vh;
+}
+
+#Booking {
+    width: 15vw;
+    height: 10vh;
+    margin-top: 2vh;
+    overflow: hidden;
+    font-size: 2vh;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0);
+    background: linear-gradient(135deg, rgb(255, 255, 255, 0.1) 50%, rgb(0, 0, 0, 0));
+    border: 0.1vh solid #ffffff;
+    border-radius: 50vh;
+    z-index: 4;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.412);
+
+}
+
+#Booking:hover {
+    transition-duration: 0.5s;
+    background-color: #ffffff;
+    color: black;
+    border: 0.1vh solid #000000;
+    border-radius: 50vh;
+    box-shadow: none;
+}
+
+
+
+h1 {
+    font-size: 30vh;
+    color: white;
+    font-style: bold;
+    font-family: SCreg;
+    font-weight: normal;
+    z-index: 5;
+    text-shadow: 0.1vh 0.1vh 0.1vh black, 0 0 1em white;
+}
+
+h4 {
+    font-size: 2.9vh;
+    color: white;
+    position: relative;
+    z-index: 4;
+
+}
